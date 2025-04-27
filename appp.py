@@ -8,8 +8,8 @@ import numpy as np
 ## load the trained model
 model = tf.keras.models.load_model('model.h5')
 
-## load the encoder and scaler
-with open('/Users/admin/Documents/Deep_learn/ven_deep/onehot_encod.pk1','rb') as file:
+## load the encoder and scalerwith open('onehot_encod.pk1', 'rb') as file:
+with open('onehot_encod.pk1', 'rb') as file:
   onehot_encod=pickle.load(file)
 
 with open('/Users/admin/Documents/Deep_learn/ven_deep/label_encoder_gender.pk1', 'rb') as file:
