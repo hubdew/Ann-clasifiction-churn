@@ -12,10 +12,11 @@ model = tf.keras.models.load_model('model.h5')
 with open('onehot_encod.pk1', 'rb') as file:
   onehot_encod=pickle.load(file)
 
-with open('/Users/admin/Documents/Deep_learn/ven_deep/label_encoder_gender.pk1', 'rb') as file:
+with open('label_encoder_gender.pk1', 'rb') as file:
+    # your code to load the pickle file
     label_encoder_gender = pickle.load(file)
 
-with open('/Users/admin/Documents/Deep_learn/ven_deep/scaler.pk1', 'rb') as file:
+with open('scaler.pk1', 'rb') as file:
     scaler = pickle.load(file)
 
     ## streamlit app
